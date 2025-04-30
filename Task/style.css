@@ -7,7 +7,9 @@ body {
 h1 {
   font-size: 70px;
   font-family: "Roboto", sans-serif;
+}
 
+.container{
   position: fixed;
   top: 50%;
   left: 50%;
