@@ -16,5 +16,31 @@
     <div class="container">
       <h1>Aish</h1>
     </div>
+
+    <script>
+      src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js";
+    </script>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        // Get the scroll position
+        let scrollPosition = window.scrollY;
+
+        // Get the element
+        let element = document.getElementsByClassName(".container");
+
+        // Calculate the new opacity based on the scroll position.
+        // This example decreases opacity from 1 to 0 as the user scrolls
+        // down to 500 pixels. You can adjust these values as needed.
+        let opacity = 1 - scrollPosition / 300;
+
+        // Ensure opacity stays within the valid range (0 to 1)
+        opacity = Math.max(0, opacity); // Do not go below 0
+        opacity = Math.min(1, opacity); // Do not go above 1
+
+        // Set the element's opacity
+        element.style.opacity = opacity;
+      });
+    </script>
   </body>
 </html>
