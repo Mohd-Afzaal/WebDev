@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function buttonReport(buttonId, buttonName, buttonValue){
+
+            var msg1 = "ButtonId: "+buttonId+"\n";
+            var msg2 = "ButtonName: "+buttonName+"\n";
+            var msg3 = "ButtonValue: "+buttonValue+"\n";
+
+            window.alert(msg1+msg2+msg3)
+
+        }
+    </script>
+</head>
+<body>
+
+    <input type="button" value="left" name="button1" id="01" onclick="buttonReport(this.id, this.name, this.value)">
+
+    <input type="button" value="center" name="button2" id="02" onclick="buttonReport(this.id, this.name, this.value)">
+
+    <input type="button" value="right" name="button3" id="03" onclick="buttonReport(this.id, this.name, this.value)">
+
+    
+</body>
+</html>
